@@ -1,0 +1,21 @@
+<!-- 
+    start broser-sync start --server --directory --files 
+    git add .
+    git commit -m "first web file"
+    git push
+!-->
+<html ng-app="theApp">
+<head>
+    <title>Hello World</title>
+    <script src="../angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <tag-buatan></tag-buatan>
+    <div ng-controller="theController">
+        
+        <input type="text" ng-model="name" ng-blur="upper()"> <br/><br/>
+        Hello my name is: {{name}}
+    </div>
+</body>
+</html>
